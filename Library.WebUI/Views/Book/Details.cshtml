@@ -1,0 +1,68 @@
+﻿@model BookDetailViewModel
+
+@{
+    Layout = "~/Views/Shared/BookLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="text-center mb-3">
+        <img src="/Images/@Model.Book.BookImage" alt="@Model.Book.Name" class="book-image">
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="mb-3">@Model.Book.Name</h2>
+            <p><strong>Author:</strong> @Model.Book.Author</p>
+            <p><strong>Genre:</strong> @Model.Book.Genre</p>
+            <p><strong>Pages:</strong> @Model.Book.Pages</p>
+            <p><strong>Price:</strong> <span class="price">$@Model.Book.Price</span></p>
+            <p><strong>Description:</strong> @Model.Book.Description</p>
+        </div>
+
+        <div class="col-md-4 d-flex flex-column gap-2">
+            <a asp-action="Add" asp-controller="Book" asp-route-id="@Model.Book.Id" class="btn btn-primary btn-lg"><i class="bi bi-pencil-square"></i> Edit</a>
+            <a asp-action="Delete" asp-controller="Book" asp-route-id="@Model.Book.Id" class="btn btn-danger btn-lg"><i class="bi bi-trash"></i> Delete</a>
+            <a asp-action="AddToCart" asp-controller="Book" asp-route-id="@Model.Book.Id" class="btn btn-success btn-lg"><i class="bi bi-cart-plus"></i> Add to Cart</a>
+            <a asp-action="Index" asp-controller="Book" class="btn btn-secondary btn-lg"><i class="bi bi-arrow-left"></i> Back to List</a>
+        </div>
+        <h4 class="mt-4">Users Who Read This Book</h4>
+        @if (Model.Book.Users != null && Model.Book.Users.Any())
+        {
+            <ul class="list-group mt-2">
+                @foreach (var user in Model.Book.Users)
+                {
+                    <li class="list-group-item">
+                        <i class="bi bi-person-circle"></i> @user.Id @user.Name @user.Surname
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="text-muted">No users have read this book yet.</p>
+        }
+      
+    </div>
+</div>
+<style>
+
+.book-image {
+    width: 140px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.gap-2 > * {
+    margin-bottom: 10px;
+}
+
+</style>

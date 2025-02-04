@@ -1,0 +1,34 @@
+﻿@model UserViewModel
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+
+}
+
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var user in Model.Users)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="~/Images/@user.ProfileImage" class="card-img-top rounded-circle mx-auto mt-3" alt="@user.Name's Profile" style="width: 100px; height: 100px; object-fit: cover;">
+                    <div class="card-body" style="display:flex; justify-content:space-between;align-items:center;">
+                        <div style="display:flex;flex-direction:column; align-items:start;justify-content:center;gap:5px;">
+
+                            <h5 class="card-title">@user.Name @user.Surname</h5>
+                            <p class="card-text"><strong>Age:</strong> @user.Age</p>
+                            <p class="card-text" style="margin-top:-10px;"><strong>Speciality:</strong> @user.Speciality</p>
+                        </div>
+                        <div style="display:flex;flex-direction:column; align-items:center; justify-content:center; gap:25px;">
+                            <a asp-action="Add" asp-route-id="@user.Id" asp-controller="User" class="btn btn-primary" style="width:80px;">Edit</a>
+                            <a asp-action="Delete" asp-controller="User" asp-route-id="@user.Id" class="btn btn-primary" style="width:80px;">Delete</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
+<list-pager page-count="@Model.PageCount" page-size="@Model.PageSize" current-page="@Model.CurrentPage" type="@Model.Type"/>
+

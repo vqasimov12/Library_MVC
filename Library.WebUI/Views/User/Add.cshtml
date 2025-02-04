@@ -1,0 +1,57 @@
+﻿@model UserAddViewModel
+
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+
+}
+
+<div class="container" style="display:flex;align-items:start;justify-content:center; ">
+    <div class="form-container"  >
+        <form asp-controller="User" method="post" asp-action="Add" enctype="multipart/form-data">
+            <div style="text-align: center;">
+                <img src="/Images/@(Model.User.ProfileImage ?? "default.jpg")" alt="Uploaded Image" style="width:150px;height:150px;" />
+            </div>
+
+            <div class="form-group d-none">
+                <label asp-for="@Model.User.Id"></label>
+                <input class="form-control my-1" readonly asp-for="@Model.User.Id" />
+                <span asp-validation-for="@Model.User.Id" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.User.Name"></label>
+                <input class="form-control my-1" asp-for="@Model.User.Name" />
+                <span asp-validation-for="@Model.User.Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.User.Surname"></label>
+                <input class="form-control my-1" asp-for="@Model.User.Surname" />
+                <span asp-validation-for="@Model.User.Surname" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="@Model.User.Speciality"></label>
+                <input class="form-control my-1" asp-for="@Model.User.Speciality" />
+                <span asp-validation-for="@Model.User.Speciality" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.User.Age"></label>
+                <input class="form-control my-1" asp-for="@Model.User.Age" />
+                <span asp-validation-for="@Model.User.Age" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Select Image</label>
+                <input type="file" id="image" name="ProfileImageFile" accept="image/*" class="form-control" />
+            </div>
+
+            <div class="btn-container" style="display:flex; margin-top:20px; align-items:center;justify-content:space-between; width:100%;">
+                <a asp-controller="User" asp-action="Index" class="btn btn-secondary">Cancel</a>
+                <button type="submit" class="btn btn-success">Save</button>
+            </div>
+        </form>
+
+    </div>
+</div>

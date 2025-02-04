@@ -1,0 +1,65 @@
+﻿@model CourseDetailViewModel
+
+@{
+    Layout = "~/Views/Shared/CourseLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="text-center mb-3">
+        <iframe width="877" height="487" src="@Model.Course.CourseLink" title="Internal Pointer Variable 🤣" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="mb-3">@Model.Course.Name</h2>
+            <p><strong>Mentor:</strong> @Model.Course.Mentor</p>
+            <p><strong>Duration:</strong> @Model.Course.Duration</p>
+            <p><strong>Price:</strong> <span class="price">$@Model.Course.Price</span></p>
+        </div>
+        <div class="col-md-4 d-flex flex-column gap-2">
+            <a asp-action="Add" asp-controller="Course" style="width:200px;" asp-route-id="@Model.Course.Id" class="btn btn-primary btn-lg"><i class="bi bi-pencil-square"></i> Edit</a>
+            <a asp-action="Delete" asp-controller="Course" asp-route-id="@Model.Course.Id" class="btn btn-danger btn-lg" style="width:200px;"><i class="bi bi-trash"></i> Delete</a>
+            <a asp-action="AddToCart" asp-controller="Course" asp-route-id="@Model.Course.Id" style="width:200px;" class="btn btn-success btn-lg"><i class="bi bi-cart-plus"></i> Add to Cart</a>
+            <a asp-action="Index" style="width:200px;" asp-controller="Course" class="btn btn-secondary btn-lg"><i class="bi bi-arrow-left"></i> Back to List</a>
+        </div>
+
+        <h4 class="mt-4">Users Who Enrolled in This Course</h4>
+        @if (Model.Course.Users != null && Model.Course.Users.Any())
+        {
+            <ul class="list-group mt-2">
+                @foreach (var user in Model.Course.Users)
+                {
+                    <li class="list-group-item">
+                        <i class="bi bi-person-circle"></i> @user.Id @user.Name @user.Surname
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="text-muted">No users have enrolled in this course yet.</p>
+        }
+    </div>
+</div>
+
+<style>
+    .course-image {
+        width: 140px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #27ae60;
+    }
+
+    .gap-2 > * {
+        margin-bottom: 10px;
+    }
+</style>

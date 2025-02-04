@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+    .card-body img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .cardItem:hover img {
+        transform: scale(1.2);
+        transition: transform 0.1s ease-in-out;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .cardContainer{
+        display: flex;
+        height: 90%;
+    }
+
+</style>
+
+<div class="cardContainer row text-center h-75">
+
+    <div class="cardItem col-md-4 hover:scale:1.1">
+        <a asp-action="Index" asp-controller="User">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">Users</div>
+                <div class="card-body d-flex flex-column align-items-center">
+                    <img src="~/images/User.gif" alt="Users" class="img-fluid mb-3">
+                </div>
+                <div class="card-footer">
+                    <p>Manage users and their information.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="cardItem col-md-4">
+        <a asp-action="Index" asp-controller="Book">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">Books</div>
+                <div class="card-body d-flex flex-column align-items-center">
+                    <img src="~/images/Book.gif" alt="Books" class="img-fluid mb-3">
+                </div>
+                <div class="card-footer">
+                    <p>View and manage the book collection.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="cardItem col-md-4">
+        <a asp-action="Index" asp-controller="Course">
+            <div class="card shadow">
+                <div class="card-header bg-danger text-white">Courses</div>
+                <div class="card-body d-flex flex-column align-items-center">
+                    <img src="~/images/Course.gif" alt="Courses" class="img-fluid mb-3">
+                </div>
+                <div class="card-footer">
+                    <p>Explore available courses and materials.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>

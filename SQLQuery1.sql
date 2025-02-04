@@ -1,0 +1,99 @@
+﻿USE master;
+GO
+CREATE DATABASE Library;
+GO
+
+USE Library;
+GO
+
+CREATE TABLE Books
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    [Name] NVARCHAR(100),
+    Genre NVARCHAR(100),
+    Author NVARCHAR(100),
+    Pages INT,
+    ReadCount INT DEFAULT 0,
+    [Description] NVARCHAR(255),
+    Price DECIMAL(10,2),
+    Quantity INT DEFAULT 0,
+    BookImage NVARCHAR(255)
+);
+GO
+
+CREATE TABLE Users
+(
+    UserID INT IDENTITY(1,1) PRIMARY KEY,
+    [Name] NVARCHAR(50),
+    Surname NVARCHAR(50),
+    Age INT,
+    Speciality NVARCHAR(50),
+    ProfileImage NVARCHAR(255)
+);
+GO
+
+CREATE TABLE Courses
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    [Name] NVARCHAR(100),
+    Duration NVARCHAR(50),
+    Price DECIMAL(10,2),
+    RequiredSkills NVARCHAR(255),
+    Mentor NVARCHAR(100),
+    CourseLink NVARCHAR(255),
+    CourseImage NVARCHAR(100)
+
+);
+GO
+
+CREATE TABLE Orders
+(
+    OrderID INT IDENTITY(1,1) PRIMARY KEY,
+    UserID INT NOT NULL,
+    TotalPrice DECIMAL(10,2) DEFAULT 0,
+    OrderDate DATETIME DEFAULT GETDATE(),
+    CONSTRAINT FK_Orders_Users FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE
+);
+GO
+
+CREATE TABLE OrderBooks
+(
+    OrderID INT NOT NULL,
+    BookID INT NOT NULL,
+    Quantity INT NOT NULL CHECK (Quantity > 0),
+    PriceAtPurchase DECIMAL(10,2) NOT NULL, 
+    CONSTRAINT PK_OrderBooks PRIMARY KEY (OrderID, BookID),
+    CONSTRAINT FK_OrderBooks_Orders FOREIGN KEY (OrderID) REFERENCES Orders(OrderID) ON DELETE CASCADE,
+    CONSTRAINT FK_OrderBooks_Books FOREIGN KEY (BookID) REFERENCES Books(Id) ON DELETE CASCADE
+);
+GO
+
+CREATE TABLE OrderCourses
+(
+    OrderID INT NOT NULL,
+    CourseID INT NOT NULL,
+    PriceAtPurchase DECIMAL(10,2) NOT NULL, 
+    CONSTRAINT PK_OrderCourses PRIMARY KEY (OrderID, CourseID),
+    CONSTRAINT FK_OrderCourses_Orders FOREIGN KEY (OrderID) REFERENCES Orders(OrderID) ON DELETE CASCADE,
+    CONSTRAINT FK_OrderCourses_Courses FOREIGN KEY (CourseID) REFERENCES Courses(Id) ON DELETE CASCADE
+);
+GO
+
+CREATE TABLE UsersCourses
+(
+    UserID INT NOT NULL,
+    CourseID INT NOT NULL,
+    CONSTRAINT PK_UsersCourses PRIMARY KEY (UserID, CourseID),
+    CONSTRAINT FK_UsersCourses_Users FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE,
+    CONSTRAINT FK_UsersCourses_Courses FOREIGN KEY (CourseID) REFERENCES Courses(Id) ON DELETE CASCADE
+);
+GO
+CREATE TABLE UserBooks
+(
+    UserID INT NOT NULL,
+    BookID INT NOT NULL,
+    CONSTRAINT PK_UserBooks PRIMARY KEY (UserID, BookID),
+    CONSTRAINT FK_UserBooks_Users FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE,
+    CONSTRAINT FK_UserBooks_Books FOREIGN KEY (BookID) REFERENCES Books(Id) ON DELETE CASCADE
+);
+GO

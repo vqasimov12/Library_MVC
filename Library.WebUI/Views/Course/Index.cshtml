@@ -1,0 +1,66 @@
+﻿@model CourseViewModel
+
+@{
+    Layout = "~/Views/Shared/CourseLayout.cshtml";
+}
+<div class="course-container" style="margin-bottom:20px;">
+    @foreach (var course in Model.Courses)
+    {
+        <div class="card d-flex flex-column align-items-center">
+         <div style="height:130px !important;">
+
+            <img src="/Images/@course.CourseImage" alt="@course.Name"
+                 style="max-width:120px; min-width: 100px; height: auto; object-fit: cover; border-radius: 5px; display: block; margin-bottom: 20px;">
+         </div>
+
+
+            <div class="d-flex justify-content-between mt-3 w-100">
+                <div class="text-start">
+                    <h3>@course.Name</h3>
+                    <p><strong>Mentor:</strong> @course.Mentor</p>
+                    <p><strong>Duration:</strong> @course.Duration</p>
+                    <p class="price">$@course.Price</p>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <a asp-action="Details" asp-controller="Course" asp-route-id="@course.Id" class="btn btn-primary mb-2"> Details</a>
+                    <a asp-action="Add" asp-controller="Course" asp-route-id="@course.Id" class="btn btn-warning mb-2">Edit</a>
+                    <a asp-action="Delete" asp-controller="Course" asp-route-id="@course.Id" class="btn btn-danger mb-2">Delete</a>
+                    <a asp-action="AddToCart" asp-controller="Course" style="width:100px;" asp-route-id="@course.Id" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<list-pager page-count="@Model.PageCount" page-size="@Model.PageSize" current-page="@Model.CurrentPage" type="@Model.Type" />
+
+<style>
+    .course-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    .courseImage {
+        width: 80px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        width: 330px;
+    }
+
+    .course-details {
+        flex: 1;
+    }
+
+    .btn-group .btn {
+        margin-right: 5px;
+    }
+</style>

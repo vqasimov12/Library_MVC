@@ -1,0 +1,50 @@
+﻿@model BookListViewModel
+
+@{
+    Layout = "~/Views/Shared/BookLayout.cshtml";
+}
+<div class="book-container" style="margin-bottom:20px;">
+    @foreach (var book in Model.Books)
+    {
+        <div class="card d-flex flex-column align-items-center">
+            <img src="/Images/@book.BookImage" alt="@book.Name"
+                 style="max-width:120px; min-width: 100px; height: auto; object-fit: cover; border-radius: 5px; display: block; margin-bottom: 20px;">
+
+
+            <div class="d-flex justify-content-between w-100 mt-3">
+                <div class="text-start">
+                    <h3>@book.Name</h3>
+                    <p><strong>Author:</strong> @book.Author</p>
+                    <p><strong>Genre:</strong> @book.Genre</p>
+                    <p><strong>Pages:</strong> @book.Pages</p>
+                    <p class="price">$@book.Price</p>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <a asp-action="Details" asp-controller="Book" asp-route-id="@book.Id" class="btn btn-primary mb-2"> Details</a>
+                    <a asp-action="Add" asp-controller="Book" asp-route-id="@book.Id" class="btn btn-warning mb-2">Edit</a>
+                    <a asp-action="Delete" asp-controller="Book" asp-route-id="@book.Id" class="btn btn-danger mb-2">Delete</a>
+                    <a asp-action="AddToCart" asp-controller="Book" style="width:100px;" asp-route-id="@book.Id" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<list-pager page-count="@Model.PageCount" page-size="@Model.PageSize" current-page="@Model.CurrentPage" type="@Model.Type"/>
+
+<style>
+    .bookImage {
+        width:80px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .book-details {
+        flex: 1;
+    }
+
+    .btn-group .btn {
+        margin-right: 5px;
+    }
+</style>
