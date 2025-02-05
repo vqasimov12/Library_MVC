@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\Images\\DefaultUser.png"
     },
     {
+      "Id": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\Order.png",
+      "PackagePath": "staticwebassets\\Images\\Order.png"
+    },
+    {
       "Id": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\User.gif",
       "PackagePath": "staticwebassets\\Images\\User.gif"
     },
@@ -39,6 +43,10 @@
     {
       "Id": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\a8968b73-4a77-4068-89c7-cace22b58a3e.jpg",
       "PackagePath": "staticwebassets\\Images\\a8968b73-4a77-4068-89c7-cace22b58a3e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\cb1cc92f-608f-48b7-90b7-20496481ffce.jpg",
+      "PackagePath": "staticwebassets\\Images\\cb1cc92f-608f-48b7-90b7-20496481ffce.jpg"
     },
     {
       "Id": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\d5443eed-60ba-48bc-9f61-6dd20c2322ee.jpg",

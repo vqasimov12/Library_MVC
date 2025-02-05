@@ -39,7 +39,6 @@ public class PagingTagHelper : TagHelper
 
 
         sb.Append("</ul>");
-        Console.WriteLine(sb.ToString());
         output.Content.AppendHtml(sb.ToString());
 
 

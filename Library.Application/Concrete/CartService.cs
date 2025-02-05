@@ -6,7 +6,7 @@ namespace Library.Application.Concrete;
 
 public class CartService : ICartService
 {
-    public void AddToCart(Cart cart, IEntity element)
+    public void AddToCart(Cart cart, IProductPrice element)
     {
         CartItem cartItem = cart.Items.FirstOrDefault(x => x.Item.Id == element.Id)!;
         if (cartItem != null)

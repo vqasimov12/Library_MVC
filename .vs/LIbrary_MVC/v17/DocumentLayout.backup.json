@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|c:\\users\\user\\onedrive - azerbaijan state oil and industry university\\desktop\\library_mvc\\library.webui\\views\\shared\\components\\cartsummary\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|solutionrelative:library.webui\\views\\shared\\components\\cartsummary\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|c:\\users\\user\\onedrive - azerbaijan state oil and industry university\\desktop\\library_mvc\\library.webui\\extensions\\sessionextensionsmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|solutionrelative:library.webui\\extensions\\sessionextensionsmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|c:\\users\\user\\onedrive - azerbaijan state oil and industry university\\desktop\\library_mvc\\library.webui\\views\\cart\\complete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|solutionrelative:library.webui\\views\\cart\\complete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|c:\\users\\user\\onedrive - azerbaijan state oil and industry university\\desktop\\library_mvc\\library.webui\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|solutionrelative:library.webui\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|c:\\users\\user\\onedrive - azerbaijan state oil and industry university\\desktop\\library_mvc\\library.webui\\models\\cartsummaryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|solutionrelative:library.webui\\models\\cartsummaryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|c:\\users\\user\\onedrive - azerbaijan state oil and industry university\\desktop\\library_mvc\\library.webui\\views\\shared\\components\\cartsummary\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|solutionrelative:library.webui\\views\\shared\\components\\cartsummary\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|c:\\users\\user\\onedrive - azerbaijan state oil and industry university\\desktop\\library_mvc\\library.webui\\viewcomponents\\cartsummaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|solutionrelative:library.webui\\viewcomponents\\cartsummaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|c:\\users\\user\\onedrive - azerbaijan state oil and industry university\\desktop\\library_mvc\\library.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B09518C6-3188-4C28-B1AD-940313A8C444}|Library.WebUI\\Library.WebUI.csproj|solutionrelative:library.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Complete.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Views\\Cart\\Complete.cshtml",
+              "RelativeDocumentMoniker": "Library.WebUI\\Views\\Cart\\Complete.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Views\\Cart\\Complete.cshtml*",
+              "RelativeToolTip": "Library.WebUI\\Views\\Cart\\Complete.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T01:13:27.215Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -42,68 +51,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Views\\Shared\\Components\\CartSummary\\Default.cshtml",
               "RelativeDocumentMoniker": "Library.WebUI\\Views\\Shared\\Components\\CartSummary\\Default.cshtml",
               "ToolTip": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Views\\Shared\\Components\\CartSummary\\Default.cshtml",
               "RelativeToolTip": "Library.WebUI\\Views\\Shared\\Components\\CartSummary\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswA4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABEAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-04T21:32:24.804Z",
+              "WhenOpened": "2025-02-05T00:29:14.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SessionExtensionsMethods.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Extensions\\SessionExtensionsMethods.cs",
-              "RelativeDocumentMoniker": "Library.WebUI\\Extensions\\SessionExtensionsMethods.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Extensions\\SessionExtensionsMethods.cs",
-              "RelativeToolTip": "Library.WebUI\\Extensions\\SessionExtensionsMethods.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:32:12.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Library.WebUI\\Controllers\\CartController.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Controllers\\CartController.cs",
               "RelativeToolTip": "Library.WebUI\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAwwEsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:32:08.157Z",
+              "WhenOpened": "2025-02-04T23:56:01.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CartSummaryViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Models\\CartSummaryViewModel.cs",
-              "RelativeDocumentMoniker": "Library.WebUI\\Models\\CartSummaryViewModel.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Models\\CartSummaryViewModel.cs",
-              "RelativeToolTip": "Library.WebUI\\Models\\CartSummaryViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Program.cs",
+              "RelativeDocumentMoniker": "Library.WebUI\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\Program.cs",
+              "RelativeToolTip": "Library.WebUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:31:59.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CartSummaryViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\ViewComponents\\CartSummaryViewComponent.cs",
-              "RelativeDocumentMoniker": "Library.WebUI\\ViewComponents\\CartSummaryViewComponent.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\ViewComponents\\CartSummaryViewComponent.cs",
-              "RelativeToolTip": "Library.WebUI\\ViewComponents\\CartSummaryViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:31:49.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T23:51:05.429Z"
             }
           ]
         }

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Library.Domain.Abstracts;
+using Newtonsoft.Json;
 
 namespace Library.WebUI.Extensions;
 
@@ -10,11 +11,15 @@ public static class SessionExtensionsMethod
         session.SetString(key, objectString);
     }
 
-    public static T GetObject<T>(this ISession session, string key) where T : class
+    public static T GetObject<T>(this ISession session, string key)
     {
         string objectString = session.GetString(key);
         if (string.IsNullOrEmpty(objectString))
-            return null;
-        return JsonConvert.DeserializeObject<T>(objectString);
+            return default;
+
+        return JsonConvert.DeserializeObject<T>(objectString, new JsonSerializerSettings
+        {
+            TypeNameHandling = TypeNameHandling.Auto
+        });
     }
 }

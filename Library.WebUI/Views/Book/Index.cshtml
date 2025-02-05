@@ -24,7 +24,7 @@
                     <a asp-action="Details" asp-controller="Book" asp-route-id="@book.Id" class="btn btn-primary mb-2"> Details</a>
                     <a asp-action="Add" asp-controller="Book" asp-route-id="@book.Id" class="btn btn-warning mb-2">Edit</a>
                     <a asp-action="Delete" asp-controller="Book" asp-route-id="@book.Id" class="btn btn-danger mb-2">Delete</a>
-                    <a asp-action="AddToCart" asp-controller="Book" style="width:100px;" asp-route-id="@book.Id" class="btn btn-success">Add to Cart</a>
+                    <a asp-action="AddToCart" asp-controller="Cart" style="width:100px;" asp-route-id="@book.Id" asp-route-type="@Model.Type" class="btn btn-success">Add to Cart</a>
                 </div>
             </div>
         </div>

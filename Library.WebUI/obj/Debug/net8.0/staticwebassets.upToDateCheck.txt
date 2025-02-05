@@ -6,10 +6,12 @@ wwwroot\Images\a40ded2c-cbcd-41b1-995f-305069f8addd.jpg
 wwwroot\Images\a8968b73-4a77-4068-89c7-cace22b58a3e.jpg
 wwwroot\Images\Book.gif
 wwwroot\Images\Book.png
+wwwroot\Images\cb1cc92f-608f-48b7-90b7-20496481ffce.jpg
 wwwroot\Images\Course.gif
 wwwroot\Images\d5443eed-60ba-48bc-9f61-6dd20c2322ee.jpg
 wwwroot\Images\DefaultUser.png
 wwwroot\Images\ede14c73-bb3b-4954-8b21-1f470a6f6c8b.jpg
+wwwroot\Images\Order.png
 wwwroot\Images\User.gif
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

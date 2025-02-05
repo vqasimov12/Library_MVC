@@ -15,4 +15,6 @@ public class CartSummaryViewComponent(ICartSessionService sessionService) : View
         };
         return View(model);
     }
+
+
 }

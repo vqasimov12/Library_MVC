@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pk51GgkGmfN2gmf+I1XWsnoMof+CeNXcon3VchzGoog=",
+  "Hash": "8OqdHPV1FdnXByp3Cab0Z0LgjsPTp6uuzIttkJE8F/I=",
   "Source": "Library.WebUI",
   "BasePath": "_content/Library.WebUI",
   "Mode": "Default",
@@ -227,6 +227,27 @@
       "OriginalItemSpec": "wwwroot\\Images\\Book.png"
     },
     {
+      "Identity": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\cb1cc92f-608f-48b7-90b7-20496481ffce.jpg",
+      "SourceId": "Library.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\",
+      "BasePath": "_content/Library.WebUI",
+      "RelativePath": "Images/cb1cc92f-608f-48b7-90b7-20496481ffce#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oo7r2p9y4y",
+      "Integrity": "WEqnz6LtyQLkR34wZOKFLvfjTg+zHs3LbWI6YYtllwI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\cb1cc92f-608f-48b7-90b7-20496481ffce.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\Course.gif",
       "SourceId": "Library.WebUI",
       "SourceType": "Discovered",
@@ -309,6 +330,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\ede14c73-bb3b-4954-8b21-1f470a6f6c8b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\Order.png",
+      "SourceId": "Library.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\",
+      "BasePath": "_content/Library.WebUI",
+      "RelativePath": "Images/Order#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2sgsln01to",
+      "Integrity": "DosRpFW5Due8q08fl7v2FWdZw8ob/JOHIBE7PY1aKeA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Order.png"
     },
     {
       "Identity": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\User.gif",
@@ -2208,6 +2250,88 @@
       ]
     },
     {
+      "Route": "Images/cb1cc92f-608f-48b7-90b7-20496481ffce.jpg",
+      "AssetFile": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\cb1cc92f-608f-48b7-90b7-20496481ffce.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WEqnz6LtyQLkR34wZOKFLvfjTg+zHs3LbWI6YYtllwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 23:19:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WEqnz6LtyQLkR34wZOKFLvfjTg+zHs3LbWI6YYtllwI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/cb1cc92f-608f-48b7-90b7-20496481ffce.oo7r2p9y4y.jpg",
+      "AssetFile": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\cb1cc92f-608f-48b7-90b7-20496481ffce.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WEqnz6LtyQLkR34wZOKFLvfjTg+zHs3LbWI6YYtllwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 23:19:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oo7r2p9y4y"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/cb1cc92f-608f-48b7-90b7-20496481ffce.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WEqnz6LtyQLkR34wZOKFLvfjTg+zHs3LbWI6YYtllwI="
+        }
+      ]
+    },
+    {
       "Route": "Images/Course.fzmn9ew5ny.gif",
       "AssetFile": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\Course.gif",
       "Selectors": [],
@@ -2532,6 +2656,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-ysR/RHpwZC9gLRkXhNGMhgvoYIrBx0jtqohi5sgIFrg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Order.2sgsln01to.png",
+      "AssetFile": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\Order.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23882"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DosRpFW5Due8q08fl7v2FWdZw8ob/JOHIBE7PY1aKeA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 01:18:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2sgsln01to"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Order.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DosRpFW5Due8q08fl7v2FWdZw8ob/JOHIBE7PY1aKeA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Order.png",
+      "AssetFile": "C:\\Users\\user\\OneDrive - Azerbaijan State Oil and Industry University\\Desktop\\LIbrary_MVC\\Library.WebUI\\wwwroot\\Images\\Order.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23882"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DosRpFW5Due8q08fl7v2FWdZw8ob/JOHIBE7PY1aKeA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Feb 2025 01:18:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DosRpFW5Due8q08fl7v2FWdZw8ob/JOHIBE7PY1aKeA="
         }
       ]
     },

@@ -1,0 +1,73 @@
+﻿@model OrderViewModel
+
+<div class="container " style="margin:-20px 0">
+    <div class="row justify-content-center">
+        <img src="~/Images/Order.png" alt="Order Image" class="img-fluid rounded-circle mb-3 custom-order-img" style="width:150px; object-fit:cover;">
+    </div>
+
+    <form asp-action="Complete" asp-controller="Cart" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Full Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="John Doe" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Address" class="form-label">Address</label>
+                    <input asp-for="Address" class="form-control" placeholder="123 Main St" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="City" class="form-label">City</label>
+                    <input asp-for="City" class="form-control" placeholder="New York" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Country" class="form-label">Country</label>
+                    <input asp-for="Country" class="form-control" placeholder="USA" />
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label asp-for="Phone" class="form-label">Phone</label>
+                    <input asp-for="Phone" class="form-control" placeholder="+1 234 567 8901" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CardNumber" class="form-label">Card Number</label>
+                    <input asp-for="CardNumber" class="form-control" placeholder="1234 5678 9012 3456" maxlength="16" />
+                    <span asp-validation-for="CardNumber" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CvvCode" class="form-label">CVV</label>
+                    <input asp-for="CvvCode" class="form-control" type="number" min="100" max="999" placeholder="123" />
+                    <span asp-validation-for="CvvCode" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ExpirationDate" class="form-label">Expiration Date (MM/YY)</label>
+                    <input asp-for="ExpirationDate" class="form-control" placeholder="12/26" />
+                    <span asp-validation-for="ExpirationDate" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <button type="submit" class="btn btn-primary btn-lg w-100">Submit Order</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

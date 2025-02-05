@@ -1,5 +1,6 @@
 ﻿using Library.Domain.Models;
 using Library.WebUI.Extensions;
+using Newtonsoft.Json;
 
 namespace Library.WebUI.Services;
 
@@ -18,7 +19,13 @@ public class CartSessionService(IHttpContextAccessor contextAccessor) : ICartSes
         return cartToCheck;
     }
 
-    public void SetCart(Cart cart) => _contextAccessor.HttpContext.Session.SetObject("cart", cart);
-
+    public void SetCart(Cart cart)
+    {
+        _contextAccessor.HttpContext.Session.SetString("cart",
+            JsonConvert.SerializeObject(cart, new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Auto
+            }));
+    }
 
 }

@@ -1,9 +1,11 @@
 ﻿using Library.Domain.Abstracts;
+using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
 namespace Library.Domain.Entities;
 
-public class Course : IEntity,IProductPrice
+[JsonObject(ItemTypeNameHandling = TypeNameHandling.Auto)]
+public class Course : IProductPrice
 {
     public int Id { get; set; }
     [Required]
